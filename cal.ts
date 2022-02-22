@@ -55,7 +55,7 @@ const pickSkill = (
         price,
     );
     sum += price;
-    console.log("need ", sum);
+    // console.log("need ", sum);
 };
 
 interface calItem {
@@ -80,7 +80,6 @@ const calAllSkills = (): void => {
                 upList.push(item);
             }
         });
-        console.log(upList);
         upList = upList.sort((a, b) => {
             const aFirst =
                 MULTIPLIER[0][a.max - 1] * a.cost +
